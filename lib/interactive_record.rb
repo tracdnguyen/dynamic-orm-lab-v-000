@@ -53,4 +53,7 @@ class InteractiveRecord
     DB[:conn].execute(sql)
   end
 
+  def find_by(attribute)
+
+  end
 end
