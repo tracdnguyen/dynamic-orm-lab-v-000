@@ -53,7 +53,7 @@ class InteractiveRecord
     DB[:conn].execute(sql)
   end
 
-  def find_by(attribute)
+  def self.find_by(attribute)
     attribute.each do |key, value|
       @attribute_key = key
       @attribute_value = value
