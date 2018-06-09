@@ -59,7 +59,7 @@ class InteractiveRecord
       @attribute_value = value
     end
 
-    sql = "SELECT * FROM #{self.table_name} WHERE #{@attribute_key.to_s} = #{@attribute_value}"
+    sql = "SELECT * FROM #{self.table_name} WHERE #{@attribute_key.to_s} = '#{@attribute_value}'"
     DB[:conn].execute(sql)
   end
 end
